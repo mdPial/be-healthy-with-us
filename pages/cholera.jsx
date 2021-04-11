@@ -9,7 +9,7 @@ function Cholera() {
   return (
     <>
       <Head>
-        <title>Soltuion For Cholera</title>
+        <title>Solution For Cholera</title>
         <link rel="icon" href="/hand.png" />
       </Head>
       <Nav />
