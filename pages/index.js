@@ -7,16 +7,21 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Be Healthy With Us</title>
         <link rel="icon" href="/hand.png" />
       </Head>
       <Nav />
       <main className={styles.main}>
         <h1 className={styles.title}>Stay Away From Cholera</h1>
-        <img className={`block fixed ${styles.image}`} src="./newspaper.webp" />
+        <img
+          className={`block fixed ${styles.image}`}
+          src="./newspaper.webp"
+        />
 
         <Link href="/cholera">
-          <button className={`block ${styles.bigButton}`}>continue</button>
+          <button className={`block static ${styles.bigButton}`}>
+            continue
+          </button>
         </Link>
       </main>
     </div>

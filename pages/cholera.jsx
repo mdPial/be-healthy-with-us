@@ -2,11 +2,16 @@ import { useState } from "react";
 import styles from "../styles/Cholera.module.css";
 import Step from "../components/Step";
 import Nav from "../components/Nav";
+import Head from "next/head";
 
 function Cholera() {
   const [steps, setSteps] = useState(0);
   return (
     <>
+      <Head>
+        <title>Soltuion For Cholera</title>
+        <link rel="icon" href="/hand.png" />
+      </Head>
       <Nav />
       <div className={styles.container}>
         {steps != 5 && (
@@ -18,7 +23,7 @@ function Cholera() {
                   onClick={() => {
                     setSteps(steps - 1);
                   }}
-                  className={`block ${styles.button}`}
+                  className={`block static ${styles.button}`}
                 >
                   previous
                 </button>
@@ -27,7 +32,7 @@ function Cholera() {
                 onClick={() => {
                   setSteps(steps + 1);
                 }}
-                className={`block ${styles.button}`}
+                className={`block static ${styles.button}`}
               >
                 next
               </button>
@@ -42,7 +47,7 @@ function Cholera() {
               onClick={() => {
                 setSteps(steps - 1);
               }}
-              className={`block ${styles.button}`}
+              className={`block static ${styles.button}`}
             >
               back
             </button>

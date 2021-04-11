@@ -1,0 +1,40 @@
+.description {
+  max-width: 70vw;
+  max-height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  height: 68vh;
+  object-fit: cover;
+}
+
+.stepsContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stepsTitle {
+  margin: 0px;
+  font-size: 40px;
+  font-family: "Old Standard TT", serif;
+  font-weight: bold;
+}
+
+.stepsDescription {
+  margin: 0px;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-family: "Old Standard TT", serif;
+  word-wrap: break-word;
+}
+
+.link {
+  font-family: "Old Standard TT", serif;
+  padding: 10px;
+  color: #f26a44;
+}

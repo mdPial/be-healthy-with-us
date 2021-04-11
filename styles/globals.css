@@ -13,3 +13,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.static:active,
+.static:active:after,
+.static:active:before,
+.static:focus,
+.static:focus:after,
+.static:focus:before,
+.static:hover,
+.static:hover:after,
+.static:hover:before {
+  transform: none;
+}

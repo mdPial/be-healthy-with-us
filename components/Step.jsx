@@ -1,5 +1,5 @@
 import { Grid } from "@material-ui/core";
-import styles from "../styles/Cholera.module.css";
+import styles from "../styles/Step.module.css";
 
 function Step({ steps }) {
   const data = [
@@ -7,37 +7,31 @@ function Step({ steps }) {
       path: "./boil.png",
       title: "Boil Water",
       description:
-        "Make sure to drink pure water by boiling. If boiling is not possible, you can use a chlorine product. If a chlorine treatment product is not available, you can treat your water with household bleach.",
+        "Make sure to drink pure water by boiling. If boiling is not possible, you can use a chlorine product or household bleach.",
     },
     {
       path: "./soap.png",
       title: "Wash Hands",
       description:
-        "Wash your hands often with soap and safe water after using latrine, cleaning child's bottom, before and after caring for someone with cholera and preparing food.",
+        "Wash your hands after using latrine and cleaning child's bottom. Also wash your hand before and after caring for someone with cholera, preparing food and eating food.",
     },
     {
       path: "./latrine.png",
       title: "Use Latrine",
       description:
-        "Use latrines or bury your poop, do not poop in any body of water.",
-    },
-    {
-      path: "./cover_food.png",
-      title: "Keep Food Covered",
-      description:
-        "Cook food well (especially seafood), keep it covered, and eat it hot. Peel fruits and vegetables.",
+        "Use latrines. If you don't have latrine bury your poop. Do not poop in any body of water.",
     },
     {
       path: "./kitchen.png",
       title: "Clean Kitchen",
       description:
-        "Clean up safely in the kitchen and in places where the family bathes and washes clothes.",
+        "Clean the kitchen and in places where the family bathes and washes clothes.",
     },
     {
-      path: "./kitchen.png",
-      title: "end",
+      path: "./cover_food.png",
+      title: "Keep Food Covered",
       description:
-        "Clean up safely in the kitchen and in places where the family bathes and washes clothes.",
+        "Cook food well specially seafood. Keep food covered, and eat it hot. Peel fruits and vegetables.",
     },
   ];
   return (
@@ -53,15 +47,15 @@ function Step({ steps }) {
             {steps == 0 && (
               <div>
                 <a
-                  className={`block accent ${styles.link}`}
+                  className={`block static accent ${styles.link}`}
                   href="https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water"
                   target="_blank"
                 >
                   How to use bleach
                 </a>
                 <a
-                  className={`block accent ${styles.link}`}
-                  href="https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water"
+                  className={`block static accent ${styles.link}`}
+                  href="https://www.cdc.gov/healthywater/drinking/public/water_disinfection.html"
                   target="_blank"
                 >
                   How to use chlorine
